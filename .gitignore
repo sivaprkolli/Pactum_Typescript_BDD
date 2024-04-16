@@ -1,2 +1,4 @@
 Testcucumber2.cjs
- node_modules
+node_modules
+dist
+*.cjs
