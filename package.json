@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "ts-node steps/test.ts",
+    "start1": "tsc && node steps/test.js",
+    "test": "cucumber-js --profile functional_default",
+    "test1": "cucumber-js ",
+    "report": "npx ts-node reporter/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt",
+    "functional": "cucumber-js feature/*.features --impoirt steps/*.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "mocha": "^10.4.0",
+    "pactum": "^3.6.7",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.4.0",
+    "ts-node": "^10.9.2"
+  }
+}

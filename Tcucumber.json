@@ -1,0 +1,14 @@
+{
+    "default":{
+
+        "paths": ["features/*.feature"],
+        "require": ["steps/*.ts",
+        "hooks/hooks.ts"],
+
+
+        "publishQuite": true,
+        "dryRun" : true,
+
+        "requireModule": ["ts-node/register"]
+     }
+}
