@@ -1,4 +1,4 @@
-import { Given, When, Then  } from "@cucumber/cucumber";
+import { Given, Then  } from "@cucumber/cucumber";
 
 Given('User on products screen', async function () {
         

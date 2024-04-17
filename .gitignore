@@ -1,4 +1,3 @@
-Testcucumber2.cjs
 node_modules
 dist
-*.cjs
+package-lock.json

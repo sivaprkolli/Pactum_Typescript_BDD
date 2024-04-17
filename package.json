@@ -1,23 +1,65 @@
 {
-  "type": "module",
+  
   "scripts": {
-    "start": "ts-node steps/test.ts",
-    "start1": "tsc && node dist/steps/test.js",
-    "test": "cucumber-js --profile functional_default",
-    "test1": "cucumber-js ",
-    "report": "npx ts-node reporter/report.ts",
-    "test:failed": "cucumber-js -p rerun @rerun.txt",
-    "functional": "cucumber-js feature/*.features --import dist/steps/*.js"
+  
+    
+  "start": "ts-node steps/test.ts",
+  
+    
+  "start1": "tsc && node dist/steps/test.js",
+  
+    
+  "test": "cucumber-js --profile smoke_default",
+  
+    
+  "test1": "cucumber-jstest",
+  
+    
+  "report": "npx ts-node reporter/report.ts",
+  
+    
+  "test:failed": "cucumber-js -p rerun @rerun.txt",
+  
+    
+  "functional": "cucumber-js feature/*.features --import dist/steps/*.js"
+  
   },
+  
   "devDependencies": {
-    "@types/node": "^20.12.7",
-    "mocha": "^10.4.0",
-    "pactum": "^3.6.7",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.5"
+  
+    
+  "@types/cucumber": "^7.0.0",
+  
+    
+  "@types/node": "^20.12.7",
+  
+    
+  "cucumber-tsflow": "^4.4.4",
+  
+    
+  "mocha": "^10.4.0",
+  
+    
+  "pactum": "^3.6.7",
+  
+    
+  "tslib": "^2.6.2",
+  
+    
+  "typescript": "^5.4.5"
+  
   },
+  
   "dependencies": {
-    "@cucumber/cucumber": "^10.4.0",
-    "ts-node": "^10.9.2"
+  
+    
+  "@cucumber/cucumber": "^10.4.0",
+  
+    
+  "npm": "^10.5.2",
+  
+    
+  "ts-node": "^10.9.2"
+  
   }
 }

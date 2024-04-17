@@ -12,7 +12,7 @@ Before(async function() {
   await  console.log("Before")
 });
 
-After(async function({pickle, result}){
+After(async function({result}){
     await console.log("After")
     if(result?.status == Status.FAILED){
         // const img =  await pageFixture.page.screenshot({path : `./screenshots/${pickle.name}.png`, type: "png"});
