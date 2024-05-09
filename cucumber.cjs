@@ -27,7 +27,8 @@ switch (suite) {
       import: [
         // Load step implementations and hooks.
         "dist/steps/*.js",
-        "dist/hooks/hooks.js"
+        "dist/hooks/hooks.js",
+        "dist/pages/login-po/*.js"
       ]
     }
   default:

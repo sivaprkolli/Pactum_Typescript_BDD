@@ -1,0 +1,7 @@
+{
+    "name": "login-po",
+    "version": "0.1.1",
+    "description": "Demo page object",
+    "main": "login_page.ts",
+    "dependencies": {}
+}
