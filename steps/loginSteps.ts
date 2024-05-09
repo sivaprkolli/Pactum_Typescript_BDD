@@ -4,7 +4,7 @@ const login_page = require("login-po");
 var token_value: string;
 
 Given('User on launch page', async function () {
-  token_value = await login_page.login();
+  token_value = await login_page.getListUsers();
   await console.log("Token value :: " + token_value)
     await console.log("User on launch page")
   });
